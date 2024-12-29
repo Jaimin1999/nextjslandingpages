@@ -1,0 +1,95 @@
+/* styles/globals.css */
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("/fonts/gilroy/Gilroy-Regular.ttf") format("ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("/fonts/gilroy/Gilroy-Bold.ttf") format("ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html,
+  body {
+    @apply dark:bg-[#0B0D39];
+  }
+}
+/* 
+.swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+} */
+
+.inputGroup {
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  padding: 0.2rem;
+  position: relative; /* Make it a positioned element for the pseudo-element to be placed */
+  background-color: rgb(0, 0, 0);
+  width: 100%; /* Full width on smaller screens */
+}
+
+.claimButton {
+  background: linear-gradient(72.44deg, #ae67fa 11.92%, #f49867 85.69%);
+  background-repeat: no-repeat;
+  cursor: pointer;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 0.4rem 1rem;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  white-space: nowrap; /* Prevent text wrapping */
+}
+
+.emailInput {
+  border: none;
+  outline: none;
+  flex-grow: 1;
+  font-size: 15px;
+  color: white;
+  width: 100%;
+  margin-left: 0.5rem;
+  background-color: transparent;
+}
+
+@media (max-width: 768px) {
+  .claimButton {
+    font-size: 11px;
+  }
+  .gradient-border {
+    width: 100%;
+    margin: 1.8rem 0 2.4rem 0;
+  }
+  .inputGroup {
+    width: 100%;
+  }
+  .newContainer {
+    width: 100%;
+  }
+}
